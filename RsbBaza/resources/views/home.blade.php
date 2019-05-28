@@ -3,20 +3,11 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+        <div class="col-md-8" style="padding-top: 150px">
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
+            <a href="{{ route('team') }}" role="button" class="btn btn-outline-danger btn-lg" style="width: 300px; height: 100px; padding-top:35px;">Играчки кадар</a>
+            <div style="width:20px; height:auto; display:inline-block;"></div>
+            <a href="{{ route('transfers') }}" role="button" class="btn btn-outline-danger btn-lg" style="width: 300px; height: 100px; padding-top:35px;">Трансфери</a>
         </div>
     </div>
 </div>

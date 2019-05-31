@@ -18,5 +18,9 @@ Route::get('/home', function () {
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/team', 'TeamController@index')->name('team');
-Route::get('/transfers', 'TransfersController@index')->name('transfers');
+
+Route::resource('players', 'PlayersController')->middleware('auth');
+//Route::get('players', 'PlayersController')->middleware('auth');
+//Route::get('/players', 'PlayersController@index')->name('team');
+
+//Route::get('/transferi', 'TransfersController@index')->name('transfers');

@@ -13,16 +13,7 @@
                     <a class="nav-link" href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/team') }}">Igracki kadar</a>
-                </li>
-                {{--<li class="nav-item">
-                    <a class="nav-link" href="{{ route('contact.create') }}">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('customers.index') }}">Customers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('companies.index') }}">Companies</a>--}}
+                    <a class="nav-link" href="{{ url('/players') }}">Igracki kadar</a>
                 </li>
             </ul>
 

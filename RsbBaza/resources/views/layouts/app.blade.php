@@ -18,6 +18,22 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script>
+        $(function() {
+            $("#dob").datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+            $("#joined").datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+            $("#contract_until").datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+        });
+    </script>
 </head>
 <body>
     <div id="app">

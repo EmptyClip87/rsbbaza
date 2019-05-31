@@ -17,13 +17,14 @@ class CreatePlayersTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('dob')->nullable();
+            $table->tinyInteger('age')->nullable();
             $table->string('nationality')->nullable();
             $table->integer('height')->nullable();
             $table->enum('preferred_foot', ['Desna', 'Leva', 'Obe']);
             $table->string('joined')->nullable();
             $table->string('signed_from')->nullable();
             $table->string('contract_until')->nullable();
-            $table->string('full_contract_wage')->nullable();
+            $table->integer('full_contract_wage')->nullable();
             $table->string('image')->nullable();
             $table->timestamps();
         });
